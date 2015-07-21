@@ -6284,8 +6284,6 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
-dl.org-dl dd:before,
-dl.org-dl dd:after,
 div.outline-2:before,
 div.outline-2:after,
 div.outline-3:before,
@@ -6312,7 +6310,6 @@ div#postamble p:after {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-dl.org-dl dd:after,
 div.outline-2:after,
 div.outline-3:after,
 div#postamble:after,
@@ -6674,20 +6671,6 @@ div#org-div-home-and-up a[disabled]:focus,
 fieldset[disabled] div#org-div-home-and-up a:focus {
   color: #777777;
   text-decoration: none;
-}
-@media (min-width: 768px) {
-  dl.org-dl dt {
-    float: left;
-    width: 160px;
-    clear: left;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  dl.org-dl dd {
-    margin-left: 180px;
-  }
 }
 div.main {
   position: relative;
