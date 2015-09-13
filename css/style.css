@@ -6793,12 +6793,12 @@ div#text-witch ul > li > ul > li {
   padding-left: 5px;
   padding-right: 5px;
 }
-div#text-chapter ul {
+div#text-section ul {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-div#text-chapter ul > li {
+div#text-section ul > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
