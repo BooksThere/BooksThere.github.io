@@ -6283,15 +6283,7 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after,
-div.outline-2:before,
-div.outline-2:after,
-div.outline-3:before,
-div.outline-3:after,
-div#postamble:before,
-div#postamble:after,
-div#postamble p:before,
-div#postamble p:after {
+.modal-footer:after {
   content: " ";
   display: table;
 }
@@ -6309,11 +6301,7 @@ div#postamble p:after {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after,
-div.outline-2:after,
-div.outline-3:after,
-div#postamble:after,
-div#postamble p:after {
+.modal-footer:after {
   clear: both;
 }
 .center-block {
@@ -6559,247 +6547,22 @@ div#postamble p:after {
     display: none !important;
   }
 }
-h1.title {
-  padding: 10px 16px;
-  margin: 50px 0;
-  border-bottom: 1px solid #96acb4;
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
-div#org-div-home-and-up {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  bottom: 0;
-  margin-bottom: 0;
-  border-width: 1px 0 0;
-  text-align: right;
-  background-color: #96acb4;
-  padding: 6px 12px;
-}
-div#org-div-home-and-up .navbar-collapse {
-  max-height: 340px;
-}
-@media (max-device-width: 480px) and (orientation: landscape) {
-  div#org-div-home-and-up .navbar-collapse {
-    max-height: 200px;
-  }
-}
-@media (min-width: 768px) {
-  div#org-div-home-and-up {
-    border-radius: 0;
-  }
-}
-div#org-div-home-and-up a {
-  display: inline-block;
-  margin-bottom: 0;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #337ab7;
+h2 small,
+h2 .small {
   font-weight: normal;
-  border-radius: 0;
-}
-div#org-div-home-and-up a:focus,
-div#org-div-home-and-up a:active:focus,
-div#org-div-home-and-up a.active:focus,
-div#org-div-home-and-up a.focus,
-div#org-div-home-and-up a:active.focus,
-div#org-div-home-and-up a.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-div#org-div-home-and-up a:hover,
-div#org-div-home-and-up a:focus,
-div#org-div-home-and-up a.focus {
-  color: #333333;
-  text-decoration: none;
-}
-div#org-div-home-and-up a:active,
-div#org-div-home-and-up a.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-div#org-div-home-and-up a.disabled,
-div#org-div-home-and-up a[disabled],
-fieldset[disabled] div#org-div-home-and-up a {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-div#org-div-home-and-up a,
-div#org-div-home-and-up a:active,
-div#org-div-home-and-up a.active,
-div#org-div-home-and-up a[disabled],
-fieldset[disabled] div#org-div-home-and-up a {
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-div#org-div-home-and-up a,
-div#org-div-home-and-up a:hover,
-div#org-div-home-and-up a:focus,
-div#org-div-home-and-up a:active {
-  border-color: transparent;
-}
-div#org-div-home-and-up a:hover,
-div#org-div-home-and-up a:focus {
-  color: #23527c;
-  text-decoration: underline;
-  background-color: transparent;
-}
-div#org-div-home-and-up a[disabled]:hover,
-fieldset[disabled] div#org-div-home-and-up a:hover,
-div#org-div-home-and-up a[disabled]:focus,
-fieldset[disabled] div#org-div-home-and-up a:focus {
+  line-height: 1;
   color: #777777;
-  text-decoration: none;
 }
-div.main {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 100px;
-}
-@media (min-width: 992px) {
-  div.main {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-@media (min-width: 992px) {
-  div.main {
-    margin-left: 16.66666667%;
-  }
-}
-div.main p {
-  margin: 20px;
-}
-div.outline-2 {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-div.outline-3 {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-div#postamble {
-  margin-left: -15px;
-  margin-right: -15px;
-  margin: 30px 0 0;
-  border-top: 1px solid #96acb4;
-  padding: 24px 0 62px;
-}
-div#postamble p {
-  display: inline;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center;
-}
-div#postamble p.author,
-div#postamble p.date {
-  float: left;
-  width: 25%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  div#postamble p.author,
-  div#postamble p.date {
-    float: left;
-    width: 25%;
-  }
-}
-@media (min-width: 992px) {
-  div#postamble p.author,
-  div#postamble p.date {
-    float: left;
-    width: 25%;
-  }
-}
-div#postamble p.creator {
-  float: left;
-  width: 33.33333333%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  div#postamble p.creator {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-@media (min-width: 992px) {
-  div#postamble p.creator {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-div#postamble p.validation {
-  float: left;
-  width: 16.66666667%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  div#postamble p.validation {
-    float: left;
-    width: 16.66666667%;
-  }
-}
-@media (min-width: 992px) {
-  div#postamble p.validation {
-    float: left;
-    width: 16.66666667%;
-  }
-}
-div#text-witch ul > li > ul {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-}
-div#text-witch ul > li > ul > li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-div#text-chapter ul {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-}
-div#text-chapter ul > li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
+h2 small,
+h2 .small {
+  font-size: 75%;
 }
