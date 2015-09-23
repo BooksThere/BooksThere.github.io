@@ -268,12 +268,12 @@ var Game = (function () {
         cl.onmouseover = function (e) { _this._mouseover.left = true; };
         cl.ontouchstart = function (e) { _this._mouseover.left = true; };
         cl.onmouseout = function (e) { _this._mouseover.left = false; };
-        cl.ontouchend = function (e) { _this._mouseover.left = false; };
+        cl.ontouchend = cl.ontouchcancel = function (e) { _this._mouseover.left = false; };
         // right
         cr.onmouseover = function (e) { _this._mouseover.right = true; };
         cr.ontouchstart = function (e) { _this._mouseover.right = true; };
         cr.onmouseout = function (e) { _this._mouseover.right = false; };
-        cr.ontouchend = function (e) { _this._mouseover.right = false; };
+        cr.ontouchend = cr.ontouchcancel = function (e) { _this._mouseover.right = false; };
         // kdfunctions.push ((e) => {
         //     this._keys[e.keyCode] = true;
         // });
