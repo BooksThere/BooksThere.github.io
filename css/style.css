@@ -6284,6 +6284,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
+dl.org-dl dd:before,
+dl.org-dl dd:after,
 div.outline-2:before,
 div.outline-2:after,
 div.outline-3:before,
@@ -6310,6 +6312,7 @@ div#postamble p:after {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
+dl.org-dl dd:after,
 div.outline-2:after,
 div.outline-3:after,
 div#postamble:after,
@@ -6564,7 +6567,7 @@ h1.title {
   margin: 50px 0;
   border-bottom: 1px solid #96acb4;
 }
-div#org-div-home-and-up {
+div#org-div-prev-home-next {
   position: fixed;
   right: 0;
   left: 0;
@@ -6576,20 +6579,20 @@ div#org-div-home-and-up {
   background-color: #96acb4;
   padding: 6px 12px;
 }
-div#org-div-home-and-up .navbar-collapse {
+div#org-div-prev-home-next .navbar-collapse {
   max-height: 340px;
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
-  div#org-div-home-and-up .navbar-collapse {
+  div#org-div-prev-home-next .navbar-collapse {
     max-height: 200px;
   }
 }
 @media (min-width: 768px) {
-  div#org-div-home-and-up {
+  div#org-div-prev-home-next {
     border-radius: 0;
   }
 }
-div#org-div-home-and-up a {
+div#org-div-prev-home-next a {
   display: inline-block;
   margin-bottom: 0;
   text-align: center;
@@ -6611,32 +6614,32 @@ div#org-div-home-and-up a {
   font-weight: normal;
   border-radius: 0;
 }
-div#org-div-home-and-up a:focus,
-div#org-div-home-and-up a:active:focus,
-div#org-div-home-and-up a.active:focus,
-div#org-div-home-and-up a.focus,
-div#org-div-home-and-up a:active.focus,
-div#org-div-home-and-up a.active.focus {
+div#org-div-prev-home-next a:focus,
+div#org-div-prev-home-next a:active:focus,
+div#org-div-prev-home-next a.active:focus,
+div#org-div-prev-home-next a.focus,
+div#org-div-prev-home-next a:active.focus,
+div#org-div-prev-home-next a.active.focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-div#org-div-home-and-up a:hover,
-div#org-div-home-and-up a:focus,
-div#org-div-home-and-up a.focus {
+div#org-div-prev-home-next a:hover,
+div#org-div-prev-home-next a:focus,
+div#org-div-prev-home-next a.focus {
   color: #333333;
   text-decoration: none;
 }
-div#org-div-home-and-up a:active,
-div#org-div-home-and-up a.active {
+div#org-div-prev-home-next a:active,
+div#org-div-prev-home-next a.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-div#org-div-home-and-up a.disabled,
-div#org-div-home-and-up a[disabled],
-fieldset[disabled] div#org-div-home-and-up a {
+div#org-div-prev-home-next a.disabled,
+div#org-div-prev-home-next a[disabled],
+fieldset[disabled] div#org-div-prev-home-next a {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -6644,33 +6647,47 @@ fieldset[disabled] div#org-div-home-and-up a {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-div#org-div-home-and-up a,
-div#org-div-home-and-up a:active,
-div#org-div-home-and-up a.active,
-div#org-div-home-and-up a[disabled],
-fieldset[disabled] div#org-div-home-and-up a {
+div#org-div-prev-home-next a,
+div#org-div-prev-home-next a:active,
+div#org-div-prev-home-next a.active,
+div#org-div-prev-home-next a[disabled],
+fieldset[disabled] div#org-div-prev-home-next a {
   background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-div#org-div-home-and-up a,
-div#org-div-home-and-up a:hover,
-div#org-div-home-and-up a:focus,
-div#org-div-home-and-up a:active {
+div#org-div-prev-home-next a,
+div#org-div-prev-home-next a:hover,
+div#org-div-prev-home-next a:focus,
+div#org-div-prev-home-next a:active {
   border-color: transparent;
 }
-div#org-div-home-and-up a:hover,
-div#org-div-home-and-up a:focus {
+div#org-div-prev-home-next a:hover,
+div#org-div-prev-home-next a:focus {
   color: #23527c;
   text-decoration: underline;
   background-color: transparent;
 }
-div#org-div-home-and-up a[disabled]:hover,
-fieldset[disabled] div#org-div-home-and-up a:hover,
-div#org-div-home-and-up a[disabled]:focus,
-fieldset[disabled] div#org-div-home-and-up a:focus {
+div#org-div-prev-home-next a[disabled]:hover,
+fieldset[disabled] div#org-div-prev-home-next a:hover,
+div#org-div-prev-home-next a[disabled]:focus,
+fieldset[disabled] div#org-div-prev-home-next a:focus {
   color: #777777;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  dl.org-dl dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  dl.org-dl dd {
+    margin-left: 180px;
+  }
 }
 div.main {
   position: relative;
