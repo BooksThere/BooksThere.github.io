@@ -1,0 +1,5 @@
+.*
+!.gitignore
+semantic/src/*
+semantic/tasks/*
+node_modules/*
